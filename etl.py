@@ -130,10 +130,11 @@ def main():
         None
     """
     spark = create_spark_session()
-    input_data = "D:/workspace/Data_Lake/song_data/"
-    output_data = "D:/workspace/Data_Lake/output_files/"
+    input_data = "file_path_of_your_input_data_source"
+    output_data = "file_path_of_your_output_data_source"
     return process_song_data(spark,input_data,output_data)
 
     
 if __name__ == "__main__":
+
     main()
